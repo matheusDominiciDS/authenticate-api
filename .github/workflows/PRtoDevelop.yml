@@ -1,4 +1,4 @@
-name: '[1] Pull Request on branch develop'
+name: Pull Request on branch develop
 on:
   push:
     branches:
