@@ -1,0 +1,13 @@
+name: Pull request to develop
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  pull-request-to-develop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull-request-to-dev
+        run: echo "Teste workflow CI/CD"
