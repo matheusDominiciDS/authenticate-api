@@ -3,7 +3,7 @@ name: PR to develop
 on:
   push:
     branches:
-      - 'feature/*'
+      - 'feature/**'
 jobs:
   create-pull-request-to-develop:
     runs-on: ubuntu-latest
