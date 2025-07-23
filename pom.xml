@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.api</groupId>
-	<artifactId>autenticate</artifactId>
+	<artifactId>authenticate-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>autenticate</name>
 	<description>Projeto de estudos sobre autenticação e autorização em java</description>
