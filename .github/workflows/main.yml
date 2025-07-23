@@ -1,0 +1,22 @@
+name: PR to develop
+
+on:
+  push:
+    branches:
+      - 'feature/*'
+jobs:
+  create-pull-request-to-develop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Criar pull request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: develop
+          branch: ${{ github.ref_name }}
+          title: 'PR automático da branch ${{ github.ref_name }} para develop'
+          body: 'Este pull request foi gerado automaticamente após um push na branch feature.'
