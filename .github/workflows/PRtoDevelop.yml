@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feature/*
+      
 jobs:
   auto-pull-request:
     name: PullRequestAction
